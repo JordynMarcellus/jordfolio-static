@@ -1,0 +1,8 @@
+/dist
+/tmp
+**/node_modules
+*.log
+/artifacts
+.env
+**/.DS_STORE
+
