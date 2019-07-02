@@ -28,7 +28,6 @@ export default withRouteData(({ posts }) => (
     />
     <BlogPostCardWrapper>
       {posts.sort(sortByCreatedAtDate).map(post => {
-        console.log(post)
         return (        
           <BlogPostCard key={post.sys.id}>
             <h1>{post.fields.headline}</h1>

@@ -4,7 +4,7 @@
   "scripts": {
     "start": "dotenv react-static start",
     "stage": "react-static build --staging",
-    "build": "dotenv react-static build",
+    "build": "react-static build",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000"
   },
