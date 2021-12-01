@@ -19,11 +19,6 @@ export const CustomHead = ({ title, seoPreviewTitle, seoPreviewContent }) => (
     <meta name="twitter:description" content={seoPreviewContent} />
     {/* <meta name="twitter:image" content="LINK TO IMAGE" /> */}
     <meta name="twitter:site" content="@jordynmarcellus" />
-
     <link rel="icon" href="/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla&family=Raleway:wght@600&display=swap"
-      rel="stylesheet"></link>
   </Head>
 );
