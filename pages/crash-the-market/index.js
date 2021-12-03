@@ -2,7 +2,7 @@ import { Layout } from "../../components/Layout";
 import { CustomHead } from "../../components/CustomHead";
 import { HeroBanner } from "../../components/HeroBanner";
 const Main = () => (
-  <Layout>
+  <>
     <CustomHead
       title="It's time to crash Toronto's housing market"
       seoPreviewTitle="Crash The Market"
@@ -18,7 +18,7 @@ const Main = () => (
         </p>
       </article>
     </HeroBanner>
-  </Layout>
+  </>
 );
 
 export default Main;
