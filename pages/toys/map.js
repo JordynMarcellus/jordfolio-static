@@ -1,6 +1,8 @@
 import path from "path";
 import fs from "fs";
-export default function Map() {
+
+export default function Map({ neighbourhoodMapData }) {
+  console.log(neighbourhoodMapData);
   return (
     <>
       <h1>this be a map</h1>
@@ -19,6 +21,9 @@ export async function getStaticProps() {
   // obviously this is for a toy
   const geoJson = fs.readFileSync(neighbourhoodsJsonPath, "utf8");
   const parsedGeoJson = JSON.parse(geoJson);
-  console.log(parsedGeoJson);
-  return { props: {} };
+  return {
+    props: {
+      neighbourhoodMapData: parsedGeoJson,
+    },
+  };
 }
